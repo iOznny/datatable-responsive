@@ -1,14 +1,10 @@
 $(document).ready(function() {
-miDataTable();
-} );
+  miDataTable();
+});
 
-
-
-
-function  miDataTable(){
-    $('#miTabla').DataTable({
-
-      "language": {
+function  miDataTable() {
+  $('#miTabla').DataTable({
+    "language": {
       "emptyTable":			"<i>No hay datos disponibles en la tabla.</i>",
       "info":		   		"Del _START_ al _END_ de _TOTAL_ ",
       "infoEmpty":			"Mostrando 0 registros de un total de 0.",
@@ -31,13 +27,7 @@ function  miDataTable(){
         "sortDescending":	"Ordenación descendente"
       }
     },
-
     "lengthMenu":		[[3,5,7, 10, 20, 25, 50, -1], [3,5,7, 10, 20, 25, 50, "Todos"]],
     "iDisplayLength":	3,
-
-
-
-
-
-    });
+  });
 }
